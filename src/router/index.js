@@ -5,6 +5,7 @@ import TeamView from "../views/TeamView.vue"
 import ActualsView from "../views/ActualsView.vue"
 import TableView from "../views/TableView"
 import ContactView from "../views/ContactView"
+import NotFoundPage from "../views/NotFoundPage"
 
 const routes = [
 	{
@@ -37,6 +38,11 @@ const routes = [
 		path: "/kontakt",
 		name: "ContactView",
 		component: ContactView,
+	},
+	{
+		path: "/:catchAll(.*)",
+		name: "NotFoundPage",
+		component: NotFoundPage,
 	},
 ]
 
