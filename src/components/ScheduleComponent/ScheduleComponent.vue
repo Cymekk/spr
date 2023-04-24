@@ -267,8 +267,8 @@ export default {
 				homeLogo: "nowa_sol.jpg",
 				homeDesc: "Logo UKS Trójka Nowa Sól",
 				date: "22.04.2023",
-				time: "",
-				score: "",
+				time: "17:00",
+				score: "26:29(14:13)",
 				awayTeam: "SPR GOKiS Kąty Wrocławskie",
 				awayLogo: "logo.jpg",
 				awayDesc: "Logo SPR GOKiS Kąty Wrocławskie",
@@ -277,8 +277,8 @@ export default {
 				homeTeam: "SPR GOKiS Kąty Wrocławskie",
 				homeLogo: "logo.jpg",
 				homeDesc: "Logo SPR GOKiS Kąty Wrocławskie",
-				date: "",
-				time: "",
+				date: "06.05.2023",
+				time: "17:00",
 				score: "",
 				awayTeam: "MKS Real-Astromal Leszno",
 				awayLogo: "leszno.jpg",
@@ -288,8 +288,8 @@ export default {
 				homeTeam: "ŚKPR Świdnica",
 				homeLogo: "swidnica_logo.jpg",
 				homeDesc: "Logo ŚKPR Świdnica",
-				date: "",
-				time: "",
+				date: "13.05.2023",
+				time: "18:00",
 				score: "",
 				awayTeam: "SPR GOKiS Kąty Wrocławskie",
 				awayLogo: "logo.jpg",
@@ -299,7 +299,7 @@ export default {
 				homeTeam: "SPR GOKiS Kąty Wrocławskie",
 				homeLogo: "logo.jpg",
 				homeDesc: "Logo SPR GOKiS Kąty Wrocławskie",
-				date: "",
+				date: "20.05.2023",
 				time: "",
 				score: "",
 				awayTeam: "MSPR Siódemka-Miedź-Huras Legnica",
@@ -326,42 +326,37 @@ export default {
 		background-color: #fff;
 		border-radius: 10px;
 
-
 		.box:nth-child(even) {
 			background-color: rgb(177, 177, 177);
 		}
 	}
 }
 
-@media(min-width: 576px)
-{
-	.schedule{
-		&__title{
+@media (min-width: 576px) {
+	.schedule {
+		&__title {
 			margin: 2.5em;
 		}
 	}
 }
-@media(min-width: 768px)
-{
-	.schedule{
-		&__title{
+@media (min-width: 768px) {
+	.schedule {
+		&__title {
 			margin: 3em;
 		}
 	}
 }
-@media(min-width: 992px)
-{
-	.schedule{
-		&__title{
+@media (min-width: 992px) {
+	.schedule {
+		&__title {
 			font-size: 1.8rem;
 			margin: 2.5em;
 		}
 	}
 }
-@media(min-width: 1200px)
-{
-	.schedule{
-		&__title{
+@media (min-width: 1200px) {
+	.schedule {
+		&__title {
 			font-size: 2rem;
 			margin: 2.5em;
 		}
