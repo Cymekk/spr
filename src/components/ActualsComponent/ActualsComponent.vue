@@ -15,7 +15,8 @@
 	</main>
 </template>
 <script>
-import { ref } from "vue"
+import { useStore } from "vuex"
+import { computed } from "vue"
 import ActualsItemComponent from "./ActualsItemComponent.vue"
 
 export default {
@@ -23,38 +24,8 @@ export default {
 	components: { ActualsItemComponent },
 
 	setup() {
-		const actualsArray = ref([
-			{
-				title: "Pewna wygrana Kątów",
-				imgSrc: "SPR-DIOZ.jpg",
-				imgAlt:
-					"Zdjęcia drużyny SPR GOKiS Kąty Wrocławskie po wygranym meczu z DIOZ SPR Górzyce Wielkie",
-			},
-			{
-				title: "Twierdza Świebodzin zdobyta",
-				imgSrc: "SPR-ZEW.jpg",
-				imgAlt:
-					"Zdjęcia drużyny SPR GOKiS Kąty Wrocławskie po wygranym meczu z TS Zew Świebodzin",
-			},
-			{
-				title: "Kącka twierdza wciąż nie zdobyta",
-				imgSrc: "SPR-Grodkow.jpg",
-				imgAlt:
-					"Zdjęcia drużyny SPR GOKiS Kąty Wrocławskie po wygranym meczu z UKS Olimp Grodków",
-			},
-			{
-				title: "Lokomotywa się nie zatrzymuje",
-				imgSrc: "SPR-AZS.jpg",
-				imgAlt:
-					"Zdjęcia drużyny SPR GOKiS Kąty Wrocławskie po wygranym meczu z KU AZS Uniwersytetu Zielonogórskiego",
-			},
-			{
-				title: "Pogrom w derbach",
-				imgSrc: "SPR-BOR.jpg",
-				imgAlt:
-					"Zdjęcia drużyny SPR GOKiS Kąty Wrocławskie po wygranym meczu z SPR BÓR-JOYNEXT Oborniki Śląskie",
-			},
-		])
+		const store = useStore()
+		const actualsArray = computed(() => store.state.actualsArray)
 
 		return { actualsArray }
 	},
